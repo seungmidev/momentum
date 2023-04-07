@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>MOMENTUM_2023</title>
+</head>
+<body>
+  <main id="main">
+    <!-- Show Current Location's Weather -->
+    <div id="weather">
+      <span class="city"></span>
+      <span class="weather"></span>
+    </div>
+
+    <!-- Current Time -->
+    <h2 id="clock">00:00</h2>
+
+    <div class="form-container">
+      <!-- Login Form -->
+      <form id="login-form" class="hidden">
+        <input required type="text" placeholder="What's your name?" maxlength="15" class="username">
+        <input type="submit" value="Enter" class="login">
+      </form>
+
+      <!-- Show Username -->
+      <h1 id="greeting" class="hidden"></h1>
+
+      <!-- ToDo List -->
+      <form id="todo-form">
+        <input type="text" placeholder="Write a To Do here" required>
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+
+    <!-- Show Random Quotes -->
+    <div id="quote">
+      <span class="quote"></span> - <span class="author"></span>
+    </div>
+  </main>
+
+  <script src="./js/greetings.js"></script>
+  <script src="./js/clock.js"></script>
+  <script src="./js/quotes.js"></script>
+  <script src="./js/background.js"></script>
+  <script src="./js/todo.js"></script>
+  <script src="./js/weather.js"></script>
+</body>
+</html>
